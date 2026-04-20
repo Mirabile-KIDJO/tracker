@@ -1,4 +1,59 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=REM:ital,wght@0,100..900;1,100..900&display=swap");
+/* SASS VAR */
+.progress1, .progress2, .progress3 {
+  position: relative;
+}
+.progress1::before, .progress2::before, .progress3::before {
+  content: "";
+  position: absolute;
+  border-left: 1px dashed #000;
+  height: 100px;
+  width: 8px;
+  bottom: 10px;
+  left: 2%;
+}
+
+.progress1, .progress2, .progress3 {
+  position: relative;
+}
+.progress1::after, .progress2::after, .progress3::after {
+  position: absolute;
+  padding: 0.1rem 0.7rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.progress1::after {
+  content: "50%";
+  top: -100px;
+  background-color: #FF934F;
+}
+
+.progress2::after {
+  content: "35%";
+  top: -70px;
+  background-color: #4FCE5D;
+}
+
+.progress3::after {
+  content: "15%";
+  top: -50px;
+  background-color: #1e1e2f;
+}
+
+.progress1::before {
+  height: 100px;
+}
+
+.progress2::before {
+  height: 70px;
+}
+
+.progress3::before {
+  height: 40px;
+}
+
 .bg-sombre {
   background-color: #EDEEF2;
 }
@@ -28,7 +83,7 @@ main section {
 }
 
 .bg-gris-sombre {
-  background-color: #c3c8cb;
+  background-color: rgb(195, 200, 203);
 }
 
 @media (min-width: 992px) {
@@ -188,11 +243,9 @@ main section {
   .div-bleu h1 {
     font-size: 1.3rem !important;
   }
-
   .div-bleu p {
     font-size: 0.8rem !important;
   }
-
   .div-bleu {
     min-height: 420px !important;
   }
@@ -225,7 +278,7 @@ main section {
 }
 
 .btn-secondary {
-  background: #FD9227 !important;
+  background: #FF934F !important;
 }
 
 .color-orange {
@@ -233,16 +286,11 @@ main section {
 }
 
 .bg-orange {
-  background-color: #FD9227;
+  background-color: #FF934F;
 }
 
 .connect-btn {
-  color: #FD9227 !important;
-}
-
-.rocket {
-  transform: rotate(25deg);
-  margin-right: 6px;
+  color: #FF934F !important;
 }
 
 .div-icon {
@@ -251,7 +299,7 @@ main section {
 }
 
 .tarif {
-  background-color: #d9e1e5;
+  background-color: rgb(217, 225, 229);
 }
 
 .progress {
@@ -351,7 +399,7 @@ main section {
 
 .tracker-barre {
   text-decoration: line-through;
-  text-decoration-color: #FD9227;
+  text-decoration-color: #FF934F;
   text-decoration-thickness: 2px;
   font-style: italic;
 }
@@ -369,7 +417,7 @@ main section {
 }
 
 .progress-bar1 {
-  background-color: #FD9227 !important;
+  background-color: #FF934F !important;
 }
 
 .progress-bar2 {
@@ -377,26 +425,11 @@ main section {
 }
 
 .progress-stacked {
-  position: relative;
   margin-top: 55px;
-  border-radius: 999px;
-  border: 2px solid #e3e7ee;
-  background: #ffffff;
-  padding: 3px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
 .progress, .progress-stacked {
   overflow: visible !important;
-}
-
-.progress-bar {
-  overflow: visible !important;
-}
-
-.progress {
-  border-radius: 999px;
-  background: #e9ecef;
 }
 
 .progress-bar {
@@ -409,48 +442,6 @@ main section {
   text-align: center;
 }
 
-.line1, .line2, .line3 {
-  border-left: 2px dotted #a6a6a4;
-  height: 32px;
-  margin: auto;
-}
-
-.percentage {
-  position: absolute;
-  transform: translateX(-50%);
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 0.7rem;
-  padding: 2px 6px;
-}
-
-.percent1 {
-  top: -85px;
-  background: #FD9227;
-}
-
-.percent2 {
-  top: -55px;
-  background: #4FCE5D;
-}
-
-.percent3 {
-  top: -35px;
-  background: #1a1d23;
-}
-
-.marker1 {
-  left: 4%;
-}
-
-.marker2 {
-  left: 53%;
-}
-
-.marker3 {
-  left: 88%;
-}
-
 .progress {
   height: 18px;
   background: #eef2f6;
@@ -461,22 +452,22 @@ main section {
 }
 
 .janvier {
-  background-color: #FCBA04 !important;
+  background-color: #FEE08C !important;
   height: 120%;
 }
 
 .fevrier {
-  background-color: #68A0F3 !important;
+  background-color: #361A95 !important;
   height: 72%;
 }
 
 .mars {
-  background-color: #5AB754 !important;
+  background-color: #4FCE5D !important;
   height: 86%;
 }
 
 .avril {
-  background-color: #6394C8 !important;
+  background-color: #396AF5 !important;
   height: 60%;
 }
 
@@ -493,8 +484,11 @@ main section {
 }
 
 .ml8 {
-  width: 4rem;
-  height: 2rem;
+  background-color: rgba(57, 106, 245, 0.3);
+}
+
+.fr {
+  background-color: rgba(54, 26, 149, 0.3);
 }
 
 .text-blue-sombre {
@@ -518,24 +512,19 @@ main section {
     height: 7.5rem;
     padding: 10px;
   }
-
   .progress {
     height: 15px;
   }
-
   .percentage {
     font-size: 0.85rem;
     padding: 4px 10px;
   }
-
   .line1, .line2, .line3 {
     height: 50px;
   }
-
   .marker {
     top: -40px;
   }
-
   .progress-stacked {
     margin-top: 65px !important;
   }
@@ -544,39 +533,31 @@ main section {
   .card-1 h6, .card-2 span {
     font-size: 1rem;
   }
-
   .card-1 i, .card-2 i {
     font-size: 0.95rem;
   }
-
   .bleu-tranparent, .bleu-sombre {
     width: 4.2rem;
     height: 2rem;
     font-size: 1rem;
   }
-
   .card-1 h4, .card-2 h4 {
     font-size: 2.2rem;
   }
-
   .epuise, .magazin {
     width: 14rem;
     height: 1.8rem;
     font-size: 0.85rem;
   }
-
   .card-1 .d-flex, .card-2 .d-flex {
     gap: 12px;
   }
-
   .percent1 {
     top: -110px;
   }
-
   .percent2 {
     top: -80px;
   }
-
   .percent3 {
     top: -40px;
   }
@@ -631,7 +612,7 @@ main section {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #FD9227;
+  background-color: #FF934F;
 }
 
 .dot-center {
@@ -647,7 +628,7 @@ main section {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #FD9227;
+  background-color: #FF934F;
 }
 
 .bubble-container {
@@ -700,11 +681,9 @@ main section {
     font-size: 0.8rem;
     padding: 0.75rem;
   }
-
   .bubble-bottom::after {
     left: 25%;
   }
-
   .dot-center {
     position: relative;
     padding-left: 1.5rem;
@@ -718,7 +697,7 @@ main section {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #FD9227;
+    background-color: #FF934F;
   }
 }
 @media (min-width: 992px) {
@@ -753,10 +732,6 @@ main section {
   word-wrap: break-word;
 }
 
-body {
-  font-family: "REM";
-}
-
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .img-6 {
     width: 85%;
@@ -764,14 +739,12 @@ body {
     height: auto;
     bottom: 0;
   }
-
   .img-7 {
     width: 100%;
     max-width: 400px;
     left: 0;
     bottom: 10px;
   }
-
   .img-8 {
     width: 75%;
     max-width: 450px;
@@ -787,7 +760,6 @@ body {
     height: 85%;
     bottom: -8px;
   }
-
   .img-7 {
     width: 650%;
     max-width: 550px;
@@ -796,7 +768,6 @@ body {
     height: 85%;
     bottom: 37px;
   }
-
   .img-8 {
     width: 90%;
     max-width: 560px;
@@ -813,21 +784,18 @@ body {
     margin: 0 auto;
     display: block;
   }
-
   .img-7 {
     width: 60%;
     max-width: 260px;
     left: 0;
     bottom: 0;
   }
-
   .img-8 {
     width: 70%;
     max-width: 340px;
     left: 10%;
     top: 20px;
   }
-
   .col-md-4.bottom-5 {
     display: flex;
     flex-direction: column;
@@ -835,33 +803,27 @@ body {
     justify-content: center;
     margin-bottom: 40px;
   }
-
   .col-md-4.end-0 {
     position: relative;
     bottom: auto;
     right: auto;
     width: 100%;
   }
-
   .div-icon {
     width: 100%;
     height: auto;
   }
-
   .row.d-flex {
     flex-wrap: nowrap;
     gap: 15px;
     align-items: flex-start;
   }
-
   .row.d-flex .col {
     flex: 1 1 auto;
   }
-
   .row.d-flex .col-auto {
     flex: 0 0 auto;
   }
-
   h3.display-lg-2 {
     font-size: 2rem;
   }
@@ -871,19 +833,15 @@ body {
     width: 100%;
     max-width: 420px;
   }
-
   .img-7 {
     display: none;
   }
-
   .img-8 {
     display: none;
   }
-
   .row.d-flex {
     gap: 12px;
   }
-
   h3.display-lg-2 {
     font-size: 1.7rem;
   }
@@ -893,12 +851,10 @@ body {
     width: 100%;
     max-width: 320px;
   }
-
   .row.d-flex {
     flex-direction: row;
     gap: 10px;
   }
-
   h3.display-lg-2 {
     font-size: 1.5rem;
   }
@@ -961,7 +917,6 @@ body {
     flex-wrap: wrap;
     justify-content: center !important;
   }
-
   .card-custom-orange .btn b {
     width: 100%;
     display: block;
@@ -981,18 +936,15 @@ body {
     font-size: 1.2rem !important;
     line-height: 1.2 !important;
   }
-
   .header h6 {
     font-size: 0.75rem !important;
     padding: 0 10px !important;
   }
-
   .header .btn {
     font-size: 0.7rem !important;
     width: 90% !important;
     margin: 20px auto 0 !important;
   }
-
   .header .btn b {
     display: block;
     width: 100%;
@@ -1002,7 +954,6 @@ body {
   .header h3 {
     font-size: 1.8rem !important;
   }
-
   .header h6 {
     font-size: 0.9rem !important;
   }
@@ -1015,28 +966,23 @@ body {
   .div-bleu {
     padding: 20px 10px !important;
   }
-
   .div-bleu h1 {
     font-size: 1.15rem !important;
     line-height: 1.2 !important;
   }
-
   .div-bleu p {
     font-size: 0.75rem !important;
     margin-bottom: 1.5rem !important;
   }
-
   .div-bleu .btn {
     font-size: 0.7rem !important;
     width: 100% !important;
     justify-content: center !important;
   }
-
   .div-bleu .btn b {
     display: block;
     width: 100%;
   }
-
   .div-phone img {
     max-height: 150px !important;
   }
@@ -1045,11 +991,9 @@ body {
   .div-bleu h1 {
     font-size: 1.5rem !important;
   }
-
   .div-bleu p {
     font-size: 0.85rem !important;
   }
-
   .div-bleu button {
     font-size: 0.8rem;
   }
@@ -1062,19 +1006,15 @@ body {
   .card-body h3.fs-1 {
     font-size: 1.5rem !important;
   }
-
   .card-body h6 sub {
     font-size: 0.65rem !important;
   }
-
   .card-body .row.g-5 {
     --bs-gutter-x: 0.5rem !important;
   }
-
   .card-body h6 small, .card-body h6 {
     font-size: 0.7rem !important;
   }
-
   .card-custom-orange .btn, .card-custom-blue .btn {
     width: 100% !important;
     font-size: 0.75rem !important;
@@ -1113,38 +1053,31 @@ body {
   .card-body h5 b {
     font-size: 1.1rem !important;
   }
-
   .card-body h6 {
     font-size: 0.8rem !important;
     line-height: 1.2;
   }
-
   .card-1, .card-2 {
     width: 100% !important;
     min-height: 6rem !important;
     padding: 8px !important;
   }
-
   .card-1 h4, .card-2 h4 {
     font-size: 1.5rem !important;
   }
-
   .ml8, .text-blue-sombre {
     width: 3.2rem !important;
     height: 1.6rem !important;
     font-size: 0.8rem !important;
   }
-
   .epuise-col, .bg-gris-sombre {
     width: 100% !important;
     font-size: 0.7rem !important;
   }
-
   .progress-month {
     height: 140px !important;
     width: 35px !important;
   }
-
   .prog-card {
     height: 16rem !important;
   }
@@ -1154,13 +1087,11 @@ body {
     display: flex !important;
     align-items: stretch !important;
   }
-
   .col-md-4.d-flex .card {
     width: 100% !important;
     display: flex !important;
     flex-direction: column !important;
   }
-
   .col-md-4.d-flex .card .card-body {
     flex: 1 1 auto !important;
     display: flex !important;
@@ -1168,17 +1099,14 @@ body {
     justify-content: space-between !important;
     padding: 15px !important;
   }
-
   .img-10 {
     max-height: 80px !important;
     width: auto !important;
     margin: 10px auto !important;
   }
-
   .card-body h4.fs-2 {
     font-size: 1.2rem !important;
   }
-
   .card-body div.rounded-3 {
     font-size: 0.75rem !important;
     line-height: 1.2 !important;
@@ -1189,22 +1117,18 @@ body {
     height: 400px !important;
     padding: 20px !important;
   }
-
   .div-hero-text h1 {
     font-size: 1.6rem !important;
     margin-bottom: 10px !important;
   }
-
   .div-hero-text p {
     font-size: 0.9rem !important;
     margin-bottom: 15px !important;
   }
-
   .img-15 {
     max-height: 390px !important;
     transform: translate(-99px, -55px) !important;
   }
-
   .div-hero-text .btn {
     padding: 0.5rem 1rem !important;
     font-size: 0.85rem !important;
@@ -1215,22 +1139,18 @@ body {
     height: 400px !important;
     padding: 20px !important;
   }
-
   .div-hero-text h1 {
     font-size: 1.6rem !important;
     margin-bottom: 10px !important;
   }
-
   .div-hero-text p {
     font-size: 0.9rem !important;
     margin-bottom: 15px !important;
   }
-
   .img-15 {
     max-height: 390px !important;
     transform: translate(-59px, -55px) !important;
   }
-
   .div-hero-text .btn {
     padding: 0.5rem 1rem !important;
     font-size: 0.85rem !important;
@@ -1243,18 +1163,15 @@ body {
     margin: 0 !important;
     padding: 0 !important;
   }
-
   .card-1 .bi-caret-left-fill, .card-2 .bi-caret-left-fill {
     margin-left: auto !important;
   }
-
   .card-1 .d-flex.gap-3, .card-2 .d-flex.gap-3 {
     justify-content: space-between !important;
     align-items: center !important;
     width: 100% !important;
     margin: 10px 0 !important;
   }
-
   .card-1 .badge, .card-2 .badge {
     margin: 0 !important;
     display: inline-flex !important;
@@ -1263,7 +1180,6 @@ body {
     height: 2.2rem !important;
     width: 4.5rem !important;
   }
-
   .card-1 h4, .card-2 h4 {
     margin: 0 !important;
     padding-right: 5px !important;
@@ -1271,7 +1187,6 @@ body {
     text-align: right !important;
     flex-grow: 1 !important;
   }
-
   .card-1 .bg-gris-sombre, .card-2 .bg-jaune-clair {
     margin-top: 10px !important;
     width: 100% !important;
@@ -1315,26 +1230,21 @@ body {
     transition: transform 0.35s ease;
     z-index: 2000;
   }
-
   .navbar-collapse.show {
     transform: translateY(0);
   }
-
   .navbar-nav {
     flex-direction: column;
     gap: 30px !important;
     text-align: center;
   }
-
   .nav-link {
     font-size: 1.4rem;
     font-weight: 500;
   }
-
   .connect-btn {
     margin-top: 30px;
   }
-
   .navbar-toggler {
     z-index: 2100;
     border: none;
@@ -1383,11 +1293,9 @@ body {
     transition: transform 0.35s ease;
     z-index: 2000;
   }
-
   .navbar-collapse.show {
     transform: translateY(0);
   }
-
   .navbar-nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1395,7 +1303,6 @@ body {
     text-align: center;
     justify-items: center;
   }
-
   .nav-link {
     font-size: 1.25rem;
     font-weight: 500;
@@ -1436,19 +1343,16 @@ body {
   .mt-lg-custom {
     margin-top: 3rem !important;
   }
-
   .img-4 {
     max-width: 1780px;
     width: 80%;
     height: 543px;
   }
-
   .header h1 {
     font-size: 2.5rem;
     line-height: 1.2;
     font-weight: 300;
   }
-
   .img-5 {
     max-height: 315px;
     max-width: 289px;
@@ -1460,13 +1364,11 @@ body {
     z-index: 12;
     transform: rotate(-3deg) translateX(20%);
   }
-
   .shot-right {
     right: 8% !important;
     z-index: 2;
     transform: rotate(3deg);
   }
-
   .img-5 {
     height: 560px !important;
   }
