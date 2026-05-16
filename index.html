@@ -6,75 +6,81 @@
     <title>Tracker</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
     <link rel="stylesheet" href="assets/css/light.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <section class="rounded-5 py-5 py-lg-5 px-4 px-lg-5">
-        <div class="header rounded-5 position-relative  overflow-hidden ">
-            <img src="assets/img/bg_lines.svg" class="img-0 position-absolute w-100 h-100 object-fit-cover">
+    <section class="rounded-5 py-1 py-lg-5 px-xl-5">
+        <div class="header rounded-5 position-relative overflow-hidden">
+            <img src="assets/img/bg_lines.svg" class="position-absolute w-100 h-100 object-fit-cover" alt="">
         
-            <div class="row g-4">
-                <div class="col-md-4 bottom-0 ">
-                    <img src="assets/img/menphis_left.svg" class=" img-fluid img-3 position-absolute bottom-0 start-0 ms-4 mb-4" >
+            <div class="d-flex justify-content-between ">
+                <div class="bottom-0">
+                    <img src="assets/img/menphis_left.svg" alt="" class="translate-middle-x img-menphis-left img-fluid w-75 h-50 position-absolute bottom-0 start-0 mb-4 d-md-block d-none">
                 </div>
-                <div class="col-md-4  d-flex align-items-center flex-column justify-content-center">
-                    <img src="assets/img/shot1.png" class="img-fluid  img-4 position-absolute bottom-0  " >
+                <div class="d-flex flex-column align-items-center justify-content-cente ">
+                    <img src="assets/img/shot1.png" class="img-fluid w-75 h-75 position-absolute bottom-0" alt="">
                 </div>
-                <div class="col-md-4 ">    
-                    <img src="assets/img/menphis_right.svg" class="img-fluid  img-2 position-absolute bottom-0 end-0 me-4 mb-4" >
+                <div class="bottom-0">    
+                    <img src="assets/img/menphis_right.svg" alt="" class="img-fluid w-75 h-50 position-absolute bottom-0 end-0 mb-4 d-none d-md-block img-menphis-right">
                 </div>
-                <img src="assets/img/shot2.png" class=" mb-5 img-5 position-absolute bottom-0 start-0  shot-left " >
-                <img src="assets/img/shot3.png " class=" W-75 mb-5 img-5 position-absolute bottom-0 end-0 shot-right" >
+                <div class="position-absolute h-75 w-100 d-flex align-items-end justify-content-between bottom-0">
+                  <img src="assets/img/shot2.png" class="shot-left ms-4 w-25 start-0 h-50 object-fit-contain" alt="">
+                  <img src="assets/img/shot3.png" class="w-25 h-50 end-0 shot-right object-fit-contain me-5" alt="">
+                </div>
             </div>
-            <nav class="navbar navbar-expand-lg container">
-            <div class="container-fluid">
-            
-                <a class="navbar-brand ms-lg-5 ms-md-3" href="#">
-                <img src="assets/img/logo_blanc.svg" class="" alt="Tracker Logo" height="50">
+            <nav class="navbar navbar-expand-lg px-xl-5">
+            <div class="container-fluid ">
+              <div class="d-flex justify-content-between gap-5">
+                <a class="navbar-brand" href="#">
+                <img src="assets/img/logo_blanc.svg" class="w-1OO" alt="Tracker Logo">
                 </a>
-                <button class="ms-auto navbar-toggler border-0 shadow-none p-2" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler ms-auto bg-light border-0 shadow-none rounded-pill" type="button"
+                  data-bs-target="#mobileNavbar" data-bs-toggle="offcanvas">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="mx-auto collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
-                        <li class="nav-item"><a class="nav-link active  text-light" aria-current="page" href="#">Acceuil</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="#">Fonctionnalités</a></li>
-                        <li class="nav-item"><a class="nav-link text-light"  href="#">Solutions</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="#">Tarifs</a></li> 
-                        <li class="nav-item"><a class="nav-link text-light" href="#">Ressources</a></li>
+              </div>
+                <div class="offcanvas h-75 offcanvas-end justify-content-between gap-lg-4 px-lg-4" tabindex="-1" id="mobileNavbar">
+                    
+                    <div class="offcanvas-header text-light">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close btn-light " data-bs-dismiss="offcanvas"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link active  text-light" aria-current="page" href="#">Acceuil</a></li>
+                        <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link text-light" href="#fonctionnalites">Fonctionnalités</a></li>
+                        <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link text-light"  href="#solutions">Solutions</a></li>
+                        <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link text-light" href="#tarification">Tarifs</a></li> 
+                        <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link text-light" href="#ressources">Ressources</a></li>
                     </ul>
-                    <button type="button" class="btn btn-dark text-secondary">
+                    <button type="button" class="btn btn-dark text-secondary" data-bs-dismiss="offcanvas">
                         <span class="text-secondary"><i class="bi bi-shield-lock-fill me-2"></i>Connexion</span>
                     </button>
                 </div>
+                </div>
             </div>
             </nav>
-            <div class="mx-auto d-flex flex-column align-items-center justify-content-end text-center position-relative mt-4">
-                <h1 class="text-light fw-lighter">La manière la plus simple 
-                <br>de gérer votre commerce</h1>
-                
-                
-                <h6 class="text-light fs-6 fw-lighter opacity-75">
-                    <small> Centralisez vos ventes, votre stock, vos fournisseurs et votre clientèle <br>dans une seule plateforme unique accessible depuis n'importe oû! <br></small>
-                </h6>
-                <h6 class="text-light fw-lighter mb-3 mb-lg-5"><b class="fs-6"> Tracker shop </b>est la solution idéale pour gérer votre commerce</h6>
-                <a href="#" class="btn btn-secondary">
-                    <span class="fw-light text-dark">
-                        <i class="bi bi-rocket-takeoff-fill me-2"></i>
-                        Commencer 
-                        <span class="fw-bold">gratuitement</span>
-                    </span>
-                </a>
+            <div class="mb-5 mx-auto d-flex flex-column align-items-center justify-content-end text-center position-relative mt-4">
+              <div class="">
+                <h1 class="text-light fw-lighter fs-1 w-50 p-0 w-50 mx-auto text-center">La manière la plus simple de gérer votre commerce</h1>
+                  <h6 class="text-light fs-5 fw-lighter opacity-75">
+                      <small> Centralisez vos ventes, votre stock, vos fournisseurs et votre clientèle <br>dans une seule plateforme unique accessible depuis n'importe oû! <br></small>
+                  </h6>
+                  <h6 class="text-light fw-lighter mb-3 mb-lg-5"><b class="fs-6"> Tracker shop </b>est la solution idéale pour gérer votre commerce</h6>
+              </div>
+              <a href="#" class="btn btn-secondary fs-6 mb-3 ">
+                <span class="fw-light text-dark">
+                  <i class="bi bi-rocket-takeoff-fill me-2"></i>
+                    Commencer 
+                    <span class="fw-bold">gratuitement</span>
+                </span>
+                </a>   
             </div>
         </div>
     </section>
 
-    <main>
+    <main class="py-5">
         <section>
             <div class="container">
                 <h6 class="fs-5 fw-light dot">Suivi et analyse des KPIs</h6><br>
@@ -106,16 +112,16 @@
                                 </h6>
                             </div>
                             <div class="card-body d-flex flex-column flex-column-reverse">
-                                <div class="progress-stacked bg-white rounded-5 border position-relative p-2 pb-4 mb-2 gap-2 mt-5 ">
+                                <div class="progress-stacked overflow-visible bg-white rounded-5 border position-relative p-2 pb-4 mb-2 gap-2 mt-5 ">
                                     <div class="progress progress1 " role="progressbar" aria-valuenow="15" aria-valuemin="0"
                                         aria-valuemax="100" >
-                                        <div class="progress-bar position-relative progress-bar1 rounded-4"></div>
+                                        <div class="progress-bar position-relative progress-bar1 bg-secondary rounded-4"></div>
                                     </div>
 
                                     <div class="progress progress2" role="progressbar" aria-valuenow="30"
                                         aria-valuemin="0"
                                         aria-valuemax="100">
-                                        <div class="progress-bar  position-relative progress-bar2 rounded-4 "></div>
+                                        <div class="progress-bar position-relative bg-success rounded-4"></div>
                                     </div>
                                     <div class="progress progress3" role="progressbar" aria-valuenow="20"
                                         aria-valuemin="0"
@@ -164,7 +170,7 @@
                                             </span>
                                         </div>
 
-                                        <div class="card mt-3 rounded-4 bg-white card-2 border-0 justify-content-between">
+                                        <div class="card mt-3 rounded-4 bg-white p-2 p-md-3 border-0">
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div class="d-flex align-items-center gap-1">
                                                     <h6 class="fs-6 fw-light">Stock boutique 3</h6>
@@ -193,29 +199,29 @@
                                         <div class="card p-2 p-lg-3 bg-white rounded-5 border-0 h-100">
                                             <div class="d-flex align-items-end justify-content-between justify-content-around">
                                                 <div class="text-center">
-                                                    <div class="progress progress-month">
-                                                        <div class="progress-bar janvier ligne-rayure "></div>
+                                                    <div class="progress progress-month d-flex flex-column w-100">
+                                                        <div class="progress-bar w-100 janvier ligne-rayure rounded-pill"></div>
                                                     </div>
                                                     <small class="text-muted fs-7">Janvier</small>
                                                 </div>
 
                                                 <div class="text-center">
-                                                    <div class="progress progress-month">
-                                                        <div class="progress-bar fevrier ligne-rayure" ></div>
+                                                    <div class="progress progress-month w-100">
+                                                        <div class="progress-bar w-100 fevrier ligne-rayure rounded-pill" ></div>
                                                     </div>
                                                     <small class="text-muted fs-7">Fevrier</small>
                                                 </div>
 
                                                 <div class="text-center">
-                                                    <div class="progress progress-month">
-                                                        <div class="progress-bar mars ligne-rayure "></div>
+                                                    <div class="progress progress-month w-100">
+                                                        <div class="progress-bar w-100 mars ligne-rayure rounded-pill"></div>
                                                     </div>
                                                     <small class="text-muted fs-7">Mars</small>
                                                 </div>
 
                                                 <div class="text-center">
-                                                    <div class="progress progress-month">
-                                                        <div class="progress-bar avril ligne-rayure"></div>
+                                                    <div class="progress progress-month w-100">
+                                                        <div class="progress-bar w-100 avril ligne-rayure rounded-pill"></div>
                                                     </div>
                                                     <small class="text-muted fs-7">Avril</small>
                                                 </div>
@@ -230,55 +236,52 @@
             </div>
         </section>
 
-        <div class="bg-lines-wrapper2 position-relative">
-            <section class="py-4 py-lg-5 px-3 px-lg-5 rounded">
+        <div class="py-5">
+        <div class="bg-lines-wrapper2 position-relative min-vh-100">
+            <div class="py-4 py-lg-5 px-3 px-lg-5 rounded">
                 <div class="container">
                     <div class="row position-relative overflow-hidden overflow-md-visible">
-                        <div class="col-md-4 col-lg-6 col-12">
-                            <img src="assets/img/cercle.svg" class="position-absolute img-fluid img-7  bottom-5 start-0  mb-5 me-5 ms-5">
-                            <img src="assets/img/menphis_tab.svg" class="position-absolute img-fluid img-8 mb-0 mt-5 ">
-                            <img src="assets/img/shot4.png" class="position-relative img-fluid img-6 mb-1 mt-5 me-1 " >
+                        <div class="col-lg-6 ">
+                            <div class="card mb-md-4">
+                                <img src="assets/img/cercle.svg" class="position-absolute start-0 me-5 ms-4">
+                                <img src="assets/img/menphis_tab.svg" class="position-absolute mb-0 mt-5">
+                                <img src="assets/img/shot4.png" class="position-relative mb-1 mt-5 me-1">
+                            </div>
                         </div>
                 
-                        <div class="col-md-4 end-0 bottom-5 col-lg-6 mt-2 col-12">
+                        <div class="end-0 bottom-5 col-lg-6 mt-2 card" id="fonctionnalites">
                             <h6 class="fs-5 text-dark fw-light dot">Fonctionnalités clés</h6>
-                            <h3 class="fw-lighter fs-1">Que peut faire Tracker Shop <br> pour votre commerce ?</h3>
-                    
-                            <div class="row d-flex mt-4">
-                                <div class="col-auto bg-secondary circle">
-                                    <i class="bi bi-receipt fs-2 text-light"></i>
-                                </div>
-                                <div class="col align-items-start start-2 div-icon">
-                                    <h5 class="fw-bold">Encaissement rapide et simple</h5>
-                                    <h6>
-                                        Encaissez en caisse ou en livraison, imprimez les tickets, acceptez mobile money et suivez vos paiements.
-                                    </h6>
-                                </div>
+                            <h3 class="fw-lighter fs-1">Que peut faire Tracker Shop pour votre commerce ?</h3>
+                            <div class="p-lg-4">
+                              <div class="d-flex mt-4 gap-4">
+                                  <div class="bg-secondary circle">
+                                      <i class="bi bi-receipt fs-2 p-lg-2 p-0 text-light"></i>
+                                  </div>
+                                  <div class="align-items-start">
+                                      <h5 class="fw-bold">Encaissement rapide et simple</h5>
+                                      <h6>Encaissez en caisse ou en livraison, imprimez les tickets, acceptez mobile money et suivez vos paiements.</h6>
+                                  </div>
+                              </div>
+                              <div class="d-flex mt-4 gap-4">
+                                  <div class="bg-primary circle">
+                                      <i class="bi bi-box-seam fs-2 text-light"></i>
+                                  </div>
+                                  <div class="align-items-start">
+                                      <h5 class="fw-bold">Gestion de stock intelligente</h5>
+                                      <h6>Stock synchronisé, alertes de rupture, inventaires simplifiés, gestion multi-boutiques.</h6>
+                                  </div>
+                              </div>
+                              <div class="d-flex mt-4 gap-4">
+                                  <div class="bg-success circle">
+                                      <i class="bi bi-graph-up-arrow fs-2 text-light"></i>
+                                  </div>
+                                  <div class="align-items-start">
+                                      <h5 class="fw-bold">Rapports et analyses</h5>
+                                      <h6>Suivez vos marges, vos ventes, vos dépenses et vos performances par produit ou vendeur.</h6>
+                                  </div>
+                              </div>
                             </div>
-                            <div class="row d-flex mt-3 mt-lg-5 ">
-                                <div class="col-auto bg-primary circle">
-                                    <i class="bi-box-seam fs-2 text-light"></i>
-                                </div>
-                                <div class="col align-items-start start-2 div-icon">
-                                    <h5 class="fw-bold">Gestion de stock intelligente</h5>
-                                    <h6>
-                                        Stock synchronisé, alertes de rupture, inventaires simplifiés,<br>gestion multi-boutiques.
-                                    </h6>
-                                </div>
-                            </div>
-                            <div class="row d-flex mt-3 mt-lg-5">
-                                <div class="col-auto bg-success circle">
-                                    <i class=" bi-graph-up-arrow fs-2 text-light"></i>
-                                </div>
-                                <div class="col align-items-start start-2 div-icon">
-                                    <h5 class="fw-bold">Rapports et analyses</h5>
-                                    <h6>
-                                        Suivez vos marges, vos ventes, vos dépenses et vos <br>
-                                        performances par produit ou vendeur.
-                                    </h6>
-                                </div>
-                            </div><br>
-                            <div class="d-flex ms-0 mt-4 mt-lg-5 ">
+                            <div class="d-flex mt-4">
                                 <button type="button" class="btn btn-dark rounded-4 ">
                                     <small class="fw-lighter"> En savoir plus <i class="bi bi-arrow-right ms-2"></i></small>
                                 </button>
@@ -286,221 +289,211 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section class="py-4 py-lg-5 px-3 px-lg-5 rounded">
+            <div class=" px-3 px-lg-0 rounded mt-4" id="solutions">
                 <div class="container">
                     <h6 class="fs-5 text-dark fw-light dot">Pourquoi choisir Tracker ?</h6>
                     <h3 class="fw-lighter fs-1">Pilotez votre commerce <br> en toute confiance.</h3>
-                    <div class="row g-3  align-items-center">
+                    <div class="row g-3 align-items-center mt-4">
                         <div class="col-md-4 col-lg-4 d-flex">
-                            <div class="card w-100 h-100 bg-orange rounded-5 border-0 h-100">
-                            <div class="card-body justify-content-center">
-                            <h4 class="text-light ms-4 fs-2">
-                                Facile à utiliser
-                            </h4>
-                            <div class="d-flex gap-ld-5 justify-content-center ">
-                            <img src="assets/img/girl.png" class=" img-fluid img-9 mb-0 mt-0 ">
-                                
-                            <div class="flex-column d-flex gap-3 bubble-wrapper">
-                                <div class="bubble bubble-top bg-white rounded-4 py-lg-2 px-lg-2 p-lg-2 border-0 ">
-                                    Une interface <br> claire et <br> intuitive
-                                </div>
-                                <div class="bubble bubble-bottom bg-white rounded-4 py-2 px-2 p-2 mt-5 border-0">
-                                Conçue pour <br>vendeurs,<br> gérants,<br> caissiers <br> et clients.
-                                </div>
-                                </div>
-                            
-                            </div>
-                            </div>
-
+                            <div class="card w-100 h-100 bg-secondary rounded-5 border-0 h-100">
+                              <div class="card-body justify-content-center">
+                                  <h4 class="text-light ms-4 fs-2">
+                                      Facile à utiliser
+                                  </h4>
+                                  <div class="d-flex gap-ld-5 justify-content-center ">
+                                      <img src="assets/img/girl.png" class="h-50 w-50">
+                                      <div class="flex-column d-flex gap-3 w-75">
+                                          <div class="card bubble-top bg-white rounded-4 border-0 p-2">
+                                              Une interface <br> claire et <br> intuitive
+                                          </div>
+                                          <div class="card bubble-bottom bg-white rounded-4 p-2 mt-5 border-0">
+                                            Conçue pour <br>vendeurs,<br> gérants,<br> caissiers <br> et clients.
+                                          </div>
+                                      </div>                            
+                                  </div>
+                              </div>
                             </div>
                         </div>
 
                         <div class="col-md-4 col-lg-4 d-flex">
-                            <div class="card bg-light rounded-5 w-100 h-100 border-0">
-                            <div class="card-body">
-                                
-                                <div class="d-flex justify-content-center">
-                                
-                                <div class="flex-column d-flex gap-1">
-                                    <div class="rounded-circle  d-flex flex-column align-items-center ">
-                                    <i class="bi bi-pie-chart-fill text-center fs-1 text-primary"></i>
+                            <div class="card bg-sombre rounded-5 w-100 h-100 border-0 p-md-3 p-lg-0">
+                              <div class="card-body">
+                                  <div class="d-flex justify-content-center">
+                                    <div class="flex-column d-flex gap-1">
+                                        <div class="rounded-circle d-flex flex-column align-items-center ">
+                                          <i class="bi bi-pie-chart-fill text-center fs-1 text-primary"></i>
+                                        </div>
+                                        <h4 class="text-black text-center fs-2">
+                                          <b>Maîtrise de vos<br>dépenses</b>
+                                        </h4>
+                                      <div class="d-flex flex-column justify-content-center align-items-center ">
+                                        <img src="assets/img/graph.svg" class="w-75 h-75 ">
+                                        <div class="rounded-3 p-2">
+                                            Analysez vos achats, vos charges et vos <br> marges pour optimiser votre gestion.
+                                        </div>
+                                      </div>
                                     </div>
-                                
-                                    <h4 class="text-black text-center fs-2">
-                                    <b>Maîtrise de vos <br>dépenses</b>
-                                    </h4>
-                                    <div class="  d-flex flex-column justify-content-center align-items-center ">
-                                    <img src="assets/img/graph.svg" class=" img-fluid img-10  ">
-                                    <div class=" rounded-3 py-1 py-lg-0 px-2 px-lg-2 p-2 p-lg-1">
-                                    Analysez vos achats, vos charges et vos <br> marges pour optimiser votre gestion.
-                                    </div>
-                                </div>
-
-                                </div>
-                            </div>
-
-                            </div>
-                        </div>
+                                  </div>
+                              </div>
+                          </div>
                         </div>
                         <div class="col-md-4 col-lg-4 d-flex ">
-                            <div class="card bg-light w-100 h-100  rounded-5 overflow-hidden border-0">
-                                <div class="card-body position-relative">
-
-                                    <div class="d-flex">
-                                        <div class="flex-column d-flex gap-3">
-                                            <div class="position-absolute rond-demi top-1 start-2 translate-middle rounded-circle"></div>
-                                        </div>
-                                
-                                    <div class="row g-0 gap-0 ms-4 mt-3  d-flex justify-content-center align-items-center">
-                                        <div class="col mt-5 mb-2 ">
-                                        <span class="align-items-center ms-5 flex-column fw-bold font-special fs-4"><i>Trackez</i></span><br>
-                                        <h4 class="fw-black fs-5"><b> <i class="tracker-barre"> Trackez </i><br> et exploitez <br>vos données
-                                        <br> immédiatement</b></h4>
-                                        </div>
-                                        <div class="col me-5">
-                                            <img src="assets/img/picto.svg" class=" img-fluid img-11 mb-md-5 mt-md-4 ">
-                                        </div>
+                            <div class="card bg-sombre w-100 h-100 rounded-5 overflow-hidden border-0 p-3">
+                              <div class="card-body position-relative">
+                                  <div class="d-flex">
+                                    <div class="flex-column d-flex gap-3">
+                                        <div class="position-absolute w-50 h-50 div-circle top-1 translate-middle rounded-circle"></div>
                                     </div>
-                                </div>
+                                      <div class="row g-0 gap-0 ms-4 mt-3 d-flex justify-content-center align-items-center">
+                                        <div class="col mt-5 mb-2 ">
+                                          <span class="align-items-center ms-5 flex-column fw-bold font-special fs-4"><i>Trackez</i></span><br>
+                                          <h4 class="fw-black fs-5"><b> <i class="text-decoration-word text-decoration-line-through fst-italic">Trackez </i><br> et exploitez <br>vos données<br> immédiatement</b></h4>
+                                        </div>
+                                        <div class="col me-auto mb-4">
+                                              <img src="assets/img/picto.svg" class="w-100" alt="">
+                                        </div>
+                                      </div>
+                                    </div>
 
-                                <h6 class="fw-normal ms-4  py-2 py-lg-2 px-2 px-lg-2 p-2 p-lg-2">Prenez de meilleures décisions grâce <br>à des insights précis et accessibles.</h6>
-                            </div>
+                                  <h6 class="fw-normal ms-4  py-2 py-lg-2 px-2 px-lg-2 p-2 p-lg-2"> Analysez vos achats, vos charges et vos <br> marges pour optimiser votre gestion.</h6>
+                              </div>
                         </div>
                     </div> 
                 </div>
-            </section>
+            </div>
         </div>
+      </div>  
+      </div>
 
-        <section id="tarification" class="py-4 py-lg-4 px-4 px-lg-5 ">
-            <div class="tarif rounded-5 position-relative py-5">
-                <div class="d-flex flex-column  align-items-center justify-content-center">
-                    <br>
-                    <h6 class="fs-5 text-dark fw-light dot">Tarification</h6><br>
-                    <h3 class="fw-lighter fs-1 text-center">Des formules adaptées à tous les commerces</h3>
+        <section id="tarification" class="py-4 mt-4 px-lg-5 mb-lg-5">
+            <div class="bg-gris rounded-5 position-relative p-lg-4">
+                <div class="d-flex flex-column align-items-center justify-content-center">   
+                    <h6 class="fs-5 text-dark fw-light dot mt-5">Tarification</h6>
+                    <h3 class="fw-lighter fs-1 text-center mt-4">Des formules adaptées à tous les commerces</h3>
                 </div>
 
-                <div class="container" >
-                    <div class="row g-3  justify-content-center px-4 py-5 ">
-                        <div class="col-md-6 col-lg-4 d-flex">
-                            <div class="card h-100  rounded-4 card-custom-orange">
+                <div class="p-lg-5">
+                  <div class="">
+                    <div class="row g-5 justify-content-center p-lg-4 py-5">
+                        <div class="col-lg-4 d-flex px-5 px-lg-2">
+                            <div class="card h-100 rounded-4 card-custom-orange py-lg-4 bg-light">
                                 <div class="card-body mt-3">
-                                    <h5 class="card-title color-orange">Démarrage</h5>
+                                    <h3 class="card-title text-secondary fw-bold">Démarrage</h3>
                                     <div class="row g-2 d-flex align-items-center flex-nowrap">
                                         <div class="col-auto">
-                                            <h3 class="fw-light fs-1 mb-0">Gratuit</h3>
+                                            <h2 class="fw-lighter fs-1 mb-0">Gratuit</h2>
                                         </div>
                                         <div class="col">
-                                            <h6 class="fw-normal mb-0 sub1">
-                                                pendant les 6 premiers mois, <br> puis <b> 5000 FCFA / mois</b>
-                                            </h6>
+                                            <h5 class="fw-normal mb-0 small p-2">pendant les 6 premiers mois, puis <b> 5000 FCFA / mois</b></h5>
                                         </div>
                                     </div>
-                                    <p class="card-text">
-                                        <h6 class="fw-normal fs-6"><b>Idéal pour commencer, tester et installer son organisation.</b>
-                                            Pendant 6 mois, l'utilisateur profite d'un vrai
-                                            pack complet.
+                                      <p class="card-text">
+                                        <h6 class="fw-normal fs-5"><b>Idéal pour commencer, tester et installer son organisation.</b>
+                                           <span class="opacity-75"> Pendant 6 mois, l'utilisateur profite d'un vrai
+                                            pack complet.</span>
                                         </h6>
-                                    </p>
-                                    <div class="d-flex  gap-2 align-items-start">
+                                      </p>
+                                    <div class="d-flex gap-2 align-items-start">
                                         <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">  Gestion complète des stocks</h6>
+                                        <h5 class=" fw-normal">Gestion complète des stocks</h5>
                                     </div>
-                                    <div class="d-flex  gap-2 align-items-start">
+                                    <div class="d-flex gap-2 align-items-start">
                                         <i class="bi bi-check2-square"></i>         
-                                        <h6 class=" fw-normal"> Gestion des ventes (gros et détail, facture)</h6>
+                                        <h5 class=" fw-normal"> Gestion des ventes (gros et détail, facture)</h5>
                                     </div>
-                                    <div class="d-flex  gap-2 align-items-start">
+                                    <div class="d-flex gap-2 align-items-start">
                                         <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Gestion des clients : comptes et dettes</h6>
+                                        <h5 class="fw-normal">Gestion des clients : comptes et dettes</h5>
                                     </div>
-                                    <div class="d-flex  gap-2 align-items-start">
+                                    <div class="d-flex gap-2 align-items-start">
                                         <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Historique des opérations</h6>
+                                        <h5 class=" fw-normal">Historique des opérations</h5>
                                     </div>
-                                    <div class="d-flex  gap-2 align-items-start">
+                                    <div class="d-flex gap-2 align-items-start">
                                         <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Tableau de bord complet</h6>
+                                        <h5 class=" fw-normal">Tableau de bord complet</h5>
                                     </div>
-                                    <div class="d-flex  gap-2 align-items-start">
+                                    <div class="d-flex gap-2 align-items-start">
                                         <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Hébergement web inclus</h6>
+                                        <h5 class=" fw-normal">Hébergement web inclus</h5>
                                     </div>
-                                    <div class="d-flex  gap-2 align-items-start">
+                                    <div class="d-flex gap-2 align-items-start">
                                         <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal"> 1 utilisateur inclus (extension possible)</h6>
+                                        <h5 class="fw-normal"> 1 utilisateur inclus (extension possible)</h5>
                                     </div>
-                                    <div class="d-flex  gap-2 align-items-start">
+                                    <div class="d-flex gap-2 align-items-start">
                                         <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Support par chat, WhatsApp, email, téléphone et ticket</h6>
+                                        <h5 class=" fw-normal">Support par chat, WhatsApp, email, téléphone et ticket</h5>
                                     </div> 
-                                    <div class="d-flex  gap-2 align-items-start mt-2">
-                                        <button
-                                            class="btn btn-secondary rounded-3 py-1 px-0 mt-3 mt-sm-2 ms-0 mx-auto py-lg-1 px-lg-3 text-black shadow-sm d-flex
-                                            align-items-center gap-1 mb-3">
-                                            <i class="bi bi-rocket-takeoff-fill rocket"></i>
-                                            Commencer<b>gratuitement</b>
-                                        </button>
+                                    <div class="d-flex gap-2 align-items-start justify-content-center mt-2">
+                                        <a href="#" class="btn btn-secondary">
+                                          <span class="fw-light text-dark">
+                                            <i class="bi bi-rocket-takeoff-fill me-2"></i>
+                                            Commencer
+                                            <span class="fw-bold">gratuitement</span>
+                                          </span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 d-flex">
-                            <div class="card h-100 rounded-4 card-custom-blue">
+                        <div class="col-lg-4 d-flex px-5 px-lg-2">
+                            <div class="card h-100 rounded-4 card-custom-blue py-lg-4 bg-light">
                                 <div class="card-body mt-3">
-                                    <h5 class="card-title text-primary">Pro</h5>
+                                    <h2 class="fw-bold card-title text-primary">Pro</h2>
                                     <div class="row g-1 d-flex align-items-baseline flex-nowrap">
                                         <div class="col-auto">
-                                            <h3 class="fw-light fs-1 mb-0">12.000</h3>
+                                            <h3 class="fw-lighter fs-1 mb-0">12.000</h3>
                                         </div>
                                         <div class="col">
-                                            <h6 class=" mb-0"><sub>FCFA/ mois</sub></h6>
+                                            <h5 class=" mb-0"><sub>FCFA/ mois</sub></h5>
                                         </div>
                                     </div>
                                     <p class="card-text">
-                                        <h6 class="fw-normal fs-6"><b>Pour boutiques, supermarchés, dépôts et commerces en croissance.</b>
-                                            Elle apporte tous les outils avancés que les entreprises ambitieuses exigent.</h6>
+                                        <h5 class="fw-normal fs-5"><b>Pour boutiques, supermarchés, dépôts et commerces en croissance.</b>
+                                        <span class="opacity-75">Elle apporte tous les outils avancés que les entreprises ambitieuses exigent.</span></h5>
                                     </p>
 
-                                    <div class="d-flex  gap-2 align-items-start">
+                                    <div class="d-flex gap-2 align-items-start">
                                         <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Tout du plan Starter</h6>
+                                        <h5 class=" fw-normal">Tout du plan Starter</h5>
                                     </div>
 
-                                    <div class="d-flex  gap-2 align-items-start">
+                                    <div class="d-flex gap-2 align-items-start">
                                         <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Multi-boutiques / multi-caisses</h6>
+                                        <h5 class="fw-normal">Multi-boutiques / multi-caisses</h5>
                                     </div>
-                                    <div class="d-flex  gap-2 align-items-start">
+                                    <div class="d-flex gap-2 align-items-start">
                                         <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Gestion des fournisseurs</h6>
+                                        <h5 class=" fw-normal">Gestion des fournisseurs</h5>
                                     </div>
-                                    <div class="d-flex  gap-2 align-items-start">
+                                    <div class="d-flex gap-2 align-items-start">
                                         <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Rapports avancés + alertes</h6>
+                                        <h5 class="fw-normal">Rapports avancés + alertes</h5>
                                     </div>
-                                    <div class="d-flex  gap-2 align-items-start">
+                                    <div class="d-flex gap-2 align-items-start">
                                         <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Gestion du personnel</h6>
+                                        <h5 class="fw-normal">Gestion du personnel</h5>
                                     </div>
-                                    <div class="d-flex  gap-2 align-items-start">
+                                    <div class="d-flex gap-2 align-items-start">
                                         <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal"> 5 Adresses e-mail professionnelle</h6>
+                                        <h5 class="fw-normal"> 5 Adresses e-mail professionnelle</h5>
                                     </div>
-                                    <div class="d-flex  gap-2 align-items-start">
+                                    <div class="d-flex gap-2 align-items-start">
                                         <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">2 utilisateurs inclus (extension possible)</h6>
+                                        <h5 class="fw-normal">2 utilisateurs inclus (extension possible)</h5>
                                     </div>
-                                    <div class="d-flex  gap-2 align-items-start">
+                                    <div class="d-flex gap-2 align-items-start">
                                         <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Mode hors ligne</h6>
+                                        <h5 class="fw-normal">Mode hors ligne</h5>
                                     </div>
-                                    <div class="d-flex  gap-2 align-items-start">
+                                    <div class="d-flex gap-2 align-items-start">
                                         <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Sauvegarde hebdomadaire</h6>
+                                        <h5 class="fw-normal">Sauvegarde hebdomadaire</h5>
                                     </div>
-                                    <div class="d-flex  gap-2 align-items-start mb-3">
+                                    <div class="d-flex gap-2 align-items-start mb-3">
                                         <button class="text-light btn btn-primary rounded-3 py-1 mt-3 mt-sm-2 px-3 ">
                                         <i class="bi bi-rocket-takeoff-fill"></i>
                                         <b>Démarrer</b> en tant que Pro
@@ -510,60 +503,58 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-lg-4 d-flex">
-                            <div class="card h-100 rounded-4 card-custom-dark">
+                        <div class="col-lg-4 d-flex px-5 px-lg-2">
+                            <div class="card h-100 rounded-4 card-custom-dark py-lg-4 bg-light">
                                 <div class="card-body mt-3">
-                                    <h5 class="card-title text-dark">Business</h5>
+                                    <h5 class="card-title text-dark fs-4 fw-bold">Business</h5>
                                     <div class="row g-5 d-flex">
                                         <div class="col-auto">
-                                        <h3 class="fw-light fs-1">Devis sur mesure</h3>
+                                        <h3 class="fw-lighter fs-1">Devis sur mesure</h3>
                                         </div>
                                     </div>
                                     <p class="card-text">
-                                        <h6 class="fw-normal fs-6"><b>Pour entreprises commerciale avec des volumes importants, et un grand nombre
+                                        <h4 class="fw-normal"><b>Pour entreprises commerciale avec des volumes importants, et un grand nombre
                                         d'utilisateur.</b>
-                                        Demandez vos propres fonctionnalités en plus des outils avancés.</h6>
+                                       <span class="opacity-75">Demandez vos propres fonctionnalités en plus des outils avancés.</span></h4>
                                     </p>
-
-                                    <div class="d-flex  gap-2 align-items-start">
+                                    <div class="d-flex gap-2 align-items-start">
                                         <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Tout du plan Pro</h6>
+                                        <h5 class="fw-normal">Tout du plan Pro</h5>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-start">
+                                        <i class="bi bi-check2-square"></i>
+                                        <h5 class="fw-normal">Formation + installation sur site</h5>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-start">
+                                        <i class="bi bi-check2-square"></i>
+                                        <h5 class="fw-normal">Déploiement multi-magasins</h5>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-start">
+                                        <i class="bi bi-check2-square"></i>
+                                        <h5 class="fw-normal">Synchronisation avancée</h5>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-start">
+                                        <i class="bi bi-check2-square"></i>
+                                        <h5 class="fw-normal">Intégrations comptables / ERP</h5>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-start">
+                                        <i class="bi bi-check2-square"></i>
+                                        <h5 class="fw-normal">Utilisateurs illimités</h5>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-start">
+                                        <i class="bi bi-check2-square"></i>
+                                        <h5 class="fw-normal">Gestion des accès et rôles complexes</h5>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-start">
+                                        <i class="bi bi-check2-square"></i>
+                                        <h5 class="fw-normal">Support premium 7/7</h5>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-start">
+                                        <i class="bi bi-check2-square"></i>
+                                        <h5 class="fw-normal">Développement spécifique (option)</h5>
                                     </div>
 
-                                    <div class="d-flex  gap-2 align-items-start">
-                                        <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Formation + installation sur site</h6>
-                                    </div>
-                                    <div class="d-flex  gap-2 align-items-start">
-                                        <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Déploiement multi-magasins</h6>
-                                    </div>
-                                    <div class="d-flex  gap-2 align-items-start">
-                                        <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Synchronisation avancée</h6>
-                                    </div>
-                                    <div class="d-flex  gap-2 align-items-start">
-                                        <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Intégrations comptables / ERP</h6>
-                                    </div>
-                                    <div class="d-flex  gap-2 align-items-start">
-                                        <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Utilisateurs illimités</h6>
-                                    </div>
-                                    <div class="d-flex  gap-2 align-items-start">
-                                        <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Gestion des accès et rôles complexes</h6>
-                                    </div>
-                                    <div class="d-flex  gap-2 align-items-start">
-                                        <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Support premium 7/7</h6>
-                                    </div>
-                                    <div class="d-flex  gap-2 align-items-start">
-                                        <i class="bi bi-check2-square"></i>
-                                        <h6 class=" fw-normal">Développement spécifique (option)</h6>
-                                    </div>
-
-                                    <div class="d-flex  gap-2 align-items-start">
+                                    <div class="d-flex gap-2 align-items-start">
                                         <button class="btn btn-warning btn-dark rounded-3 py-1 px-3 mt-3 mt-sm-2 mb-3">
                                             <i class="bi bi-envelope-fill"></i>
                                             <b>Nous contacter</b>
@@ -572,44 +563,48 @@
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <div class="bg-lines-wrapper position-relative">
-            <div class="py-lg-5 px-4 py-0 p px-lg-5">
-                <div class=" position-relative overflow-visible">
-                    <div class="row g-0 bg-primary rounded-5 div-bleu align-items-center position-relative overflow-visible ">
-                        <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-end position-relative div-phone">
-                            <img src="assets/img/shot5.png" class="img-fluid img-15 position-relative">
+        <div class="bg-lines-wrapper py-lg-1 position-relative min-vh-100">
+            <div class=" px-lg-5 px-4 mt-lg-5">
+              <div class="position-relative overflow-visible card div-bleu-parent">
+                    <div class="h-75 row bg-primary rounded-5 position-relative overflow-visible mt-lg-4">
+                        <div class="h-100 col-lg-4 d-lg-flex d-none justify-content-start p-0 align-items-end position-relative">
+                          <img src="assets/img/shot5.png" class="img-fluid position-relative start-0 d-flex align-items-start justify-content-between rounded-5 ">
                         </div>
-                        <div class="col-lg-8 col-md-6 p-4 p-lg-5 text-white position-relative div-hero-text">
-                            <h1 class="fw-bold mb-3 display-5">
-                                Transformez la gestion de votre commerce avec Tracker Shop.
-                            </h1>
-                            <p class="fs-5 opacity-75 mb-4">
-                                Adoptez une plateforme moderne, optimisée et rapide pour gérer vos ventes, votre stock, vos clients et vos
-                                boutiques.
-                            </p>
-                            <button class="btn btn-secondary  rounded-3 px-4 py-lg-1 px-lg-3 text-black shadow-sm d-flex align-items-center gap-1">
-                                <i class="bi bi-rocket-takeoff-fill rocket"></i>
-                                Commencer<b>gratuitement</b>
-                            </button>
+                        <div class="col-lg-8 text-white position-relative justify-content-center d-flex flex-column px-lg-5">
+                          <div class="px-lg-5">
+                            <h1 class="fw-bold mb-3 display-3 d-xl-block d-none">Transformez la gestion de votre commerce avec
+                              Tracker Shop.</h1>
+                            <h1 class="fw-bold mb-3 fs-1 d-xl-none d-sm-block">Transformez la gestion de votre commerce avec
+                              Tracker Shop.</h1>
+                            <p class="fs-3 opacity-75 mb-4">Adoptez une plateforme moderne, optimisée et rapide pour gérer vos ventes, votre stock, vos clients et vos boutiques.</p>
+                             <a href="#" class="btn btn-secondary fs-5">
+                               <span class="fw-light text-dark">
+                                 <i class="bi bi-rocket-takeoff-fill me-2"></i>
+                                 Commencer
+                                 <span class="fw-bold">gratuitement</span>
+                               </span>
+                             </a>
+                          </div>
                         </div>
                     </div>
-                </div>
+              </div>
             </div>
-            <section class="rounded-5 py-4 py-lg-4 px-4 px-lg-5">
+            <div class="rounded-5 px-4 px-lg-5" id="ressources">
                 <h6 class="fs-5 text-dark fw-light text-center dot-center">
                     Foire aux questions
                 </h6>
                 <h3 class="text-dark fw-lighter text-center fs-1 mt-4">
                     Questions fréquentes
                 </h3>
-                <div class="container rounded-4 py-4 py-lg-4 px-4 px-lg-4">
+                <div class="container rounded-4 px-4 px-lg-4">
                     <div class="accordion" id="accordionExample">
-                        <div class="accordion-item border-0 custom-accordion-item">
+                        <div class="accordion-item border-0 custom-accordion-item bg-transparent mb-1">
                             <h2 class="accordion-header">
                                 <button class="fs-2 accordion-button bg-transparent rounded-4 fw-bold text-dark shadow-none" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne"
@@ -617,8 +612,9 @@
                                     Tracker Shop fonctionne-t-il sans Internet ?
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                <div class="accordion-body "><br>
+                            
+                            <div id="collapseOne" class="accordion-collapse collape show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body pt-0"><br>
                                     Oui, et c'est l'un de nos plus grands avantages. Tracker Shop intègre des fonctionnalités Offline capables
                                     de fonctionner même en cas d'absence totale de connexion. Concrètement, cela veut dire que vous pouvez faire
                                     des ventes et encaisser vos clients, même sans réseau. Le système sauvegarde automatiquement toutes les
@@ -629,7 +625,7 @@
                             </div>
                         </div>
 
-                        <div class="accordion-item border-0 custom-accordion-item">
+                        <div class="accordion-item border-0 custom-accordion-item bg-transparent mb-1">
                             <h2 class="accordion-header">
                                 <button class="fs-2 accordion-button collapsed bg-transparent rounded-4 fw-bold text-dark shadow-none"
                                     type="button"
@@ -652,7 +648,7 @@
                             </div>
                         </div>
 
-                        <div class="accordion-item border-0 custom-accordion-item">
+                        <div class="accordion-item border-0 custom-accordion-item bg-transparent mb-1">
                             <h2 class="accordion-header">
                                 <button class="fs-2 accordion-button collapsed bg-transparent rounded-4 fw-bold text-dark shadow-none"
                                     type="button"
@@ -673,7 +669,7 @@
                             </div>
                         </div>
 
-                        <div class="accordion-item border-0 custom-accordion-item">
+                        <div class="accordion-item border-0 custom-accordion-item bg-transparent mb-1">
                             <h2 class="accordion-header">
                                 <button class="fs-2 accordion-button collapsed bg-transparent rounded-4 fw-bold text-dark shadow-none"
                                     type="button"
@@ -695,174 +691,124 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     </main>
 
-    <footer class="px-4 px-lg-5 ">
-        <div class=" container-fluid rounded-5 py-5 py-lg-5 px-5   bg-footer">
+    <footer class="px-4 px-lg-5 mb-4">
+        <div class=" container-fluid rounded-5 p-5 bg-footer">
+          <div class="p-lg-5">
             <div class="row g-lg-5 ms-2 ">
                 <div class="col-md-6 col-lg-3">
-                    <img src="assets/img/logo_blanc_full.svg" class="mx-auto img-footer" alt="Tracker Logo" >
+                    <img src="assets/img/logo_blanc_full.svg" class="mx-auto w-75 mb-4" alt="Tracker Logo" >
                     <div class="text-light">
-                        <h6 class="text-light fw-normal fs-6">
-                            <small> Tracker Shop est une solution simple
-                                <br> et moderne pour gérer les ventes, les <br>
+                        <h5 class="text-light fw-normal fs-4 py-4">
+                            <small class="">Tracker Shop est une solution simple
+                                 et moderne pour gérer les ventes, les 
                                     stocks et les boutiques en temps
-                                    réel, <br> avec ou sans Internet. Développé par <br> LIGHT Innovation.</small> 
-                            </h6>
-                        </div>
-                        <div class="d-flex gap-3 mb-4 mt-3 mt-lg-4">
-                        <a href="#" ><i class="bi bi-facebook text-light fs-5"></i></a>
-                        <a href="#"><i class="bi bi-instagram text-light fs-5"></i></a>
-                        <a href="#"><i class="bi bi-youtube text-light fs-5"></i></a>
-                        <a href="#"><i class="bi bi-linkedin text-light fs-5"></i></a>
-                        <a href="#"><i class="bi bi-tiktok text-light fs-5"></i></a>
-                        <a href="#"><i class="bi bi-whatsapp text-light fs-5"></i></a>
+                                    réel,  avec ou sans Internet. Développé par LIGHT Innovation.</small> 
+                        </h5>
+                   
+                    <div class="d-flex gap-3 mb-4 mt-3 mt-lg-4">
+                        <a href="#" ><i class="bi bi-facebook text-light fs-3"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-light fs-3"></i></a>
+                        <a href="#"><i class="bi bi-youtube text-light fs-3"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-light fs-3"></i></a>
+                        <a href="#"><i class="bi bi-tiktok text-light fs-3"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp text-light fs-3"></i></a>
                     </div>
+                  </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 mb-4 mt-4 mt-lg-5">
-                    <h5 class="text-light  fs-5"><b>Fonctionnalités</b></h5>
+                    <h1 class="text-light fw-bold">Fonctionnalités</h1>
                     <ul class="list-unstyled">
                         <li class="text-light fs-6">
-                            <h6 class="text-light fs-6 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i>
-                            Point de vente </h6>
+                            <h5 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i>
+                            Point de vente </h5>
                         </li>
                         <li class="text-light fs-6 ">
-                            <h6 class="text-light fs-6 fw-normal">
-                                <i class="bi bi-caret-right-fill text-light"></i>
-                                Stocks & Inventaires
-                            </h6>        
+                            <h6 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i> Stocks & Inventaires </h6>        
                         </li>
                         <li class="text-light fs-6">
-                            <h6 class="text-light fs-6 fw-normal">
-                                <i class="bi bi-caret-right-fill text-light"></i>
-                                Clients
-                            </h6>
+                            <h6 class="text-light fs-5 fw-normal"><i class="bi bi-caret-right-fill text-light"></i>Clients </h6>
                         </li>
                         <li class="text-light fs-6">
-                            <h6 class="text-light fs-6 fw-normal">
-                                <i class="bi bi-caret-right-fill text-light"></i>
-                                Achats & Fournisseurs
-                            </h6>
+                            <h6 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i> Achats & Fournisseurs </h6>
                         </li>
                         <li class="text-light fs-6">
-                            <h6 class="text-light fs-6 fw-normal">
+                            <h6 class="text-light fs-5 fw-normal">
                                 <i class="bi bi-caret-right-fill text-light"></i>
                                 Ventes & Facturation
                             </h6>
                         </li>
                         <li class="text-light fs-6">
-                            <h6 class="text-light fs-6 fw-normal">
-                                <i class="bi bi-caret-right-fill text-light"></i>
-                                Livraisons & Tournées
-                            </h6>
+                            <h6 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i> Livraisons & Tournées </h6>
                         </li>
                         <li class="text-light">
-                            <h6 class="text-light fs-6 fw-normal">
-                                <i class="bi bi-caret-right-fill text-light "></i>
-                                Rapports & Analyses
-                            </h6>
+                            <h6 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light "></i> Rapports & Analyses </h6>
                         </li>
                         <li class="text-light">
-                            <h6 class="text-light fs-6 fw-normal">
-                                <i class="bi bi-caret-right-fill text-light"></i>
-                                Multi-boutiques
-                            </h6>       
+                            <h6 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i> Multi-boutiques </h6>       
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-md-6 col-lg-3">
-                    <h5 class="text-light  fs-5"><b>Ressources</b></h5>
+                    <h1 class="text-light fw-bold">Ressources</h1>
                     
                     <ul class="list-unstyled">
                         <li class="text-light fs-6">
-                        <h6 class="text-light fs-6 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i>
-                            Centre d'aide </h6>
-                        </li>
+                          <h6 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i> Centre d'aide </h6> </li>
                         <li class="text-light fs-6 ">
-                        <h6 class="text-light fs-6 fw-normal">
-                            <i class="bi bi-caret-right-fill text-light"></i>
-                            Stocks & Inventaires
-                        </h6>
+                          <h6 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i> Stocks & Inventaires</h6>
                         </li>
                         <li class="text-light fs-6">
-                        <h6 class="text-light fs-6 fw-normal">
-                            <i class="bi bi-caret-right-fill text-light"></i>
-                            Clients
-                        </h6>
+                          <h6 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i> Clients</h6>
                         </li>
                         <li class="text-light fs-6">
-                        <h6 class="text-light fs-6 fw-normal">
-                            <i class="bi bi-caret-right-fill text-light"></i>
-                            Guides et tutoriels
-                        </h6>
-
+                          <h6 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i> Guides et tutoriels </h6>
                         </li>
                         <li class="text-light fs-6">
-                        <h6 class="text-light fs-6 fw-normal">
-                            <i class="bi bi-caret-right-fill text-light"></i>
-                            FAQ
-                        </h6>
-
+                          <h6 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i>FAQ</h6>
                         </li>
                         <li class="text-light fs-6">
-                        <h6 class="text-light fs-6 fw-normal">
-                            <i class="bi bi-caret-right-fill text-light"></i>
-                            Blog et actualité
-                        </h6>
+                          <h6 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i> Blog et actualité</h6>
                         </li>
                     </ul>
 
-                    <h5 class="text-light fs-5"><b>Tarifs</b></h5>
+                    <h1 class="text-light fw-bold">Tarifs</h1>
                     <ul class="list-unstyled">
-                        <li class="text-light fs-6">
-                            <h6 class="text-light fs-6 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i>
-                            Formules </h6>
-                        </li>
+                        <li class="text-light fs-6"> <h6 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i> Formules </h6> </li>
                         <li class="text-light fs-6 ">
-                            <h6 class="text-light fs-6 fw-normal">
-                            <i class="bi bi-caret-right-fill text-light"></i>
-                            Comparaison des plans
-                            </h6>
+                          <h6 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i>Comparaison des plans </h6>
                         </li>
                         <li class="text-light fs-6">
-                            <h6 class="text-light fs-6 fw-normal">
-                            <i class="bi bi-caret-right-fill text-light"></i>
-                            Modules additionnels
-                            </h6>
+                            <h6 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i> Modules additionnels</h6>
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-md-6 col-lg-3 mb-4 mt-4 mt-lg-5">
-                    <h5 class="text-light  fs-5"><b>Tracker</b></h5>
+                    <h1 class="text-light fw-bold">Tracker</h1>
                     <ul class="list-unstyled">
                         <li class="text-light fs-6">
-                            <h6 class="text-light fs-6 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i>
-                            À propos </h6>
+                           <h6 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i> À propos </h6>
                         </li>
                         <li class="text-light fs-6 ">
-                            <h6 class="text-light fs-6 fw-normal">
-                                <i class="bi bi-caret-right-fill text-light"></i>
-                                Light Innovation
-                            </h6>
+                            <h6 class="text-light fs-5 fw-normal"><i class="bi bi-caret-right-fill text-light"></i> Light Innovation </h6>
                         </li>
                         <li class="text-light fs-6">
-                            <h6 class="text-light fs-6 fw-normal">
-                                <i class="bi bi-caret-right-fill text-light"></i>
-                                Contact
-                            </h6>
+                            <h6 class="text-light fs-5 fw-normal"><i class="bi bi-caret-right-fill text-light"></i> Contact</h6>
                         </li>
                     </ul>
                 </div>
             </div>
-            <hr class="text-light"><br>
-            <h5 class="text-light fs-6 fw-normal text-center">
+            <hr class="text-light mb-4">
+            <h5 class="text-light fs-5 fw-normal py-4">
                 <i class="bi bi-c-circle"></i> 2025 - Tous droits réservés - LIGHT Innovation
             </h5>
+        </div>
         </div>
     </footer>
 

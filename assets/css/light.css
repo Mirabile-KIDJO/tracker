@@ -120,7 +120,7 @@ p {
 }
 
 .bg-light, .btn-light, #testimonial .carousel-indicators div {
-  background-color: #EEFCD9 !important;
+  background-color: #ffffff !important;
 }
 
 .bg-black {
@@ -133,6 +133,10 @@ p {
 
 .bg-white, .btn-white, #categories a .badge, .link-message.lu .forHover {
   background-color: #fff !important;
+}
+
+.bg-success {
+  background-color: #4FCE5D;
 }
 
 .text-primary, .btn-outline-primary, .btn-light, .link-primary, .link-dark:hover, .link-light:hover, .icoTwo, #categories a .badge, #categories a.active {
@@ -152,7 +156,7 @@ p {
 }
 
 .text-light, .btn-dark, .link-light {
-  color: #EEFCD9 !important;
+  color: #ffffff !important;
 }
 
 .btn-primary, .btn-secondary, .btn-info, .btn-white:hover, .btn-outline-secondary:hover, #searchbox form .form-select, #searchbox form button, #about, #categories a.active .badge, #categories a:hover .badge {
@@ -180,7 +184,7 @@ p {
 }
 
 .border-light, .btn-outline-light, #testimonial {
-  border-color: #EEFCD9 !important;
+  border-color: #ffffff !important;
 }
 
 .btn {
@@ -414,7 +418,7 @@ a.linkedin:hover i.fa-linkedin {
 }
 
 .print {
-  background-color: #EEFCD9;
+  background-color: #ffffff;
   border: #fff 2px solid;
   color: #000;
 }
