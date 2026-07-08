@@ -1,0 +1,131 @@
+@import "colors";
+
+
+/* HTML REDESIGN */
+*{font-family: 'REM', sans-serif;}
+*:hover{transition: all ease-in-out 0.2s;}
+a {text-decoration: none; color: #000;}
+body{color:#000 !important; font-weight:300;}
+a, .btn{ &:hover, &:active, &:focus, &:focus-visible{outline:none !important; box-shadow:none !important;} }
+a:hover{text-decoration: none;}
+
+h1{font-size:2em; font-weight:700;}
+h2{font-size:1.6em; font-weight:700;}
+h3{font-size:1.5em; font-weight:300;}
+h4{font-size:1.2em; font-weight:200;}
+h5{font-size:1.1em; font-weight:300;}
+h6{font-size:1.1em; font-weight:200;}
+
+p{margin-bottom:0; line-height: 1.8;}
+.content{
+	p{margin-bottom:0.6rem; line-height: 1.8; text-align: justify;}
+	&.text-center p{text-align: center;}
+	p:last-of-type{margin-bottom:0;}
+	h2, h3, h4, h5, h6{margin-top: 2rem !important;}
+}
+
+/* ANTI BOOTSTRAP */
+.text-justify {text-align: justify;}
+
+.bg-degra{background: linear-gradient(#fff, $info);}
+.bg-degra2{background: linear-gradient(-160deg, #fff, rgba($primary, 0.5));}
+.bg-primary-opac{background-color: rgba($primary,0.85);}
+
+.bg-primary, .btn-primary, .btn-primary:focus, .btn-primary:focus-visible, .btn-primary:active, .btn-outline-primary:hover, .dropdown-item.active, .dropdown-item:active, #searchbox form .form-select, #about, #categories a.active .badge, #categories a:hover .badge{background-color:$primary !important;}
+.bg-secondary, .btn-secondary, .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:focus-visible, .btn-secondary:active, .btn-outline-secondary:hover, .btn-outline-secondary:focus, .btn-outline-secondary:active, .carousel-indicators .active, #searchbox form button{background-color:$secondary !important;}
+.bg-info, .link-message .forHover .auteur{background-color: $info !important;}
+.bg-info-50, .link-message .forHover, .link-message.lu .forHover .auteur{background-color: rgba($info,0.5) !important;}
+.bg-info-pur, .btn-info, .link-message:hover .forHover, .link-message:hover .forHover .auteur, .link-message.lu:hover .forHover{background-color: $info !important;}
+.bg-dark, .btn-dark, .btn-white:hover{background-color:#000 !important;}
+.bg-light, .btn-light, #testimonial .carousel-indicators div{background-color:$light !important;}
+.bg-black{background-color:#000 !important;}
+.bg-warning{background-color:$warning !important;}
+.bg-white, .btn-white, #categories a .badge, .link-message.lu .forHover{background-color: #fff !important;}
+.bg-success{background-color: $success;}
+.text-primary, .btn-outline-primary, .btn-light, .link-primary, .link-dark:hover, .link-light:hover, .icoTwo, #categories a .badge, #categories a.active{color:$primary !important;}
+.text-secondary, .link-secondary, .link-primary:hover, .nav-link.active, .nav-link:hover, .mobile-link.active, .mobile-link:hover, .btn-outline-secondary, #testimonial .card-title, .icoOne, .icoThree{color:$secondary !important;}
+.text-dark, .link-dark, .link-secondary:hover, .nav-link{color:#000 !important;}
+.text-info{color: $info !important;}
+.text-light, .btn-dark, .link-light{color:$light !important;}
+.btn-primary, .btn-secondary, .btn-info, .btn-white:hover, .btn-outline-secondary:hover, #searchbox form .form-select, #searchbox form button, #about, #categories a.active .badge, #categories a:hover .badge{color:#fff !important;}
+
+.border-primary, .btn-outline-primary, .btn-primary, #searchbox form{border-color:$primary !important;}
+.border-secondary, .btn-outline-secondary, .btn-secondary{border-color:$secondary !important;}
+.border-info{border-color:$info !important;}
+.border-info-pur, .btn-info{border-color:$info !important;}
+.border-dark, .btn-outline-dark{border-color:#000 !important;}
+.border-light, .btn-outline-light, #testimonial{border-color:$light !important;}
+
+.btn{border-radius: 0.7em; font-weight: 700 !important; border-width:2px;}
+.btn-primary:hover, .btn-secondary:hover, #searchbox form button:hover, .btn-info:hover{filter: brightness(90%);}
+.btn-primary, .btn-secondary, .btn-dark, .btn-light, .btn-white, .btn-black, .btn-danger, .btn-success, select, input{outline: 0 !important; box-shadow: none !important;}
+
+.rounded-6{border-radius:4em !important; overflow:hidden !important;
+    .rounded-6{border-radius:3.6em !important;}
+}
+
+.rounded-send{border-radius:4em 0 !important;}
+
+.rounded-7{border-radius:6em !important; overflow:hidden !important;
+    .rounded-7{border-radius:3em !important;}
+}
+.card{border:0; background: transparent;}
+
+.form-floating>label{left:6%; transform: translate(0%, -50%) !important;}
+
+.navbar-light .navbar-toggler{border: none !important;}
+.navbar-brand img{height:70px;}
+.nav-item{margin:0 .8em;}
+.nav-link{font-weight: 500;}
+
+.fs-7{font-size: 0.9rem !important;}
+.fs-8{font-size: 0.8rem !important;}
+.fs-9{font-size: 0.7rem !important;}
+
+.w-60{width:60% !important;}
+
+.unValid{display:inline-block; margin:auto; background-color: #dc3545; @extend .fs-8; border-radius: 100px; margin-top: .25rem!important; padding: 0.25em 1em; color: #fff; font-weight: 700;}
+
+.oc-progress-bar {height: 10px; background-color: rgba($secondary, 0.75);}
+
+/* SOCIAL ICONE COLOR */
+a:hover i.fa-facebook-square, a:hover i.fa-facebook, a:hover i.fa-facebook-f, a:hover i.fa-facebook-official{ color: #3b5998 !important; }
+a:hover i.fa-linkedin, a:hover i.fa-linkedin-square, a:hover i.fa-linkedin-in{ color: #007bb6 !important; }
+a:hover i.fa-youtube, a:hover i.fa-youtube-play,a:hover i.fa-youtube-square, a:hover i.fa-envelope-square, a:hover i.fa-envelope, a:hover i.fa-envelope-o{ color: #bb0000 !important; }
+a:hover i.fa-instagram{ color: #833AB4 !important; }
+a:hover i.fa-twitter, a:hover i.fa-twitter-square{ color: #00aced !important; }
+a:hover i.fa-whatsapp, a:hover i.fa-phone{ color: #4FCE5D !important; }
+.facebook{background-color:#3b5998; border:#fff 2px solid; color:#fff;} .facebook:hover{border:#3b5998 2px solid; color: #3b5998 !important; background:#fff;} a.facebook:hover i.fa-facebook{color:#3b5998  !important;}
+.twitter{background-color:#00aced; border:#fff 2px solid; color:#fff;} .twitter:hover{border:#00aced 2px solid; color: #00aced !important; background:#fff;} a.twitter:hover i.fa-twitter{color:#00aced !important;}
+.youtube{background-color:#bb0000; border:#fff 2px solid; color:#fff;} .youtube:hover{border:#bb0000 2px solid; color: #bb0000 !important; background:#fff;} a.youtube:hover i.fa-youtube{color:#bb0000 !important;}
+.tiktok{background-color:#000; border:#fff 2px solid; color:#fff;} .tiktok:hover{border:#000 2px solid; color: #000 !important; background:#fff;} a.tiktok:hover i.fa-tiktok{color:#000 !important;}
+.instagram{background-color:#833AB4; border:#fff 2px solid; color:#fff;} .instagram:hover{border:#833AB4 2px solid; color: #833AB4 !important; background:#fff;} a.instagram:hover i.fa-instagram{color:#833AB4 !important;}
+.whatsapp{background-color:#4FCE5D; border:#fff 2px solid; color:#fff;} .whatsapp:hover{border:#4FCE5D 2px solid; color: #4FCE5D !important; background:#fff;} a.whatsapp:hover i.fa-whatsapp{color:#4FCE5D !important;}
+.linkedin{background-color:#007bb6; color:#fff !important; border:#fff 2px solid;} .linkedin:hover{border:#007bb6 2px solid; color:#007bb6 !important; background:#fff;} a.linkedin:hover i.fa-linkedin{color:#007bb6 !important;}
+.print{background-color:$light; border:#fff 2px solid; color:#000;} .print:hover{border:#000 2px solid; color: #000 !important; background:#fff;} a.print:hover i.fa-print{color:#000 !important;}
+.envelope{background-color:#c00; border:#fff 2px solid; color:#fff;} .envelope:hover{border:#c00 2px solid; color: #c00 !important; background:#fff;} a.envelope:hover i.fa-envelope{color:#c00 !important;}
+
+.pagination{
+	.page-link{border:0; border-radius: 100px !important; background:$info; color:$primary; margin:0 5px; font-size: 0.9em; font-weight: bold;}
+	.page-item:first-child .page-link, .page-item:last-child .page-link{background:#fff; }
+	.active .page-link, .page-link:hover, .page-item:first-child .page-link:hover, .page-item:last-child .page-link:hover{background:$primary; color:#fff; }
+}
+
+.circle{display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 50%;}
+
+@media (max-width: 1199px) { //lg
+}
+@media (max-width: 991px) { //lg
+
+
+}
+
+@media (min-width: 768px) { //md
+
+}
+@media (max-width: 767px) { //md
+
+}
+@media (max-width: 575px) { //sm
+
+}

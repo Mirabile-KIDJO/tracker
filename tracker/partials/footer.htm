@@ -1,0 +1,74 @@
+<footer class="px-4 px-lg-5 mb-4">
+        <div class=" container-fluid rounded-5 p-5 bg-footer">
+          <div class="p-lg-5">
+            <div class="row g-lg-5 ms-2 ">
+                <div class="col-md-6 col-lg-3">
+                    <img src="{{this.theme.footer_img|media}}" class="mx-auto w-75 mb-4" alt="Tracker Logo" >
+                    <div class="text-light">
+                        <h5 class="text-light fw-normal fs-4 py-4">
+                            <small class="">{{this.theme.footer_text}}</small>
+                        </h5>
+
+                    <div class="d-flex gap-3 mb-4 mt-3 mt-lg-4">
+                        <a href="#" ><i class="bi bi-facebook text-light fs-3"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-light fs-3"></i></a>
+                        <a href="#"><i class="bi bi-youtube text-light fs-3"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-light fs-3"></i></a>
+                        <a href="#"><i class="bi bi-tiktok text-light fs-3"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp text-light fs-3"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4 mt-4 mt-lg-5">
+                    <h1 class="text-light fw-bold">Fonctionnalités</h1>
+                    <ul class="list-unstyled">
+                    {% for item in this.theme.footer_fonctionnalites %}
+                        <li class="text-light fs-6">
+                            <h5 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i>{{item.fonctionnalite}}</h5>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h1 class="text-light fw-bold">Ressources</h1>
+
+                    <ul class="list-unstyled">
+                    {% for item in this.theme.footer_ressources %}
+                        <li class="text-light fs-6">
+                          <h6 class="text-light fs-5 fw-normal"><i class="bi bi-caret-right-fill text-light"></i> {{item.ressource}} </h6>
+                        </li>
+                    {% endfor %}
+                    </ul>
+
+                    <h1 class="text-light fw-bold">Tarifs</h1>
+                    <ul class="list-unstyled">
+                    {% for item in this.theme.footer_tarif %}
+                        <li class="text-light fs-6"> <h6 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i> {{item.tarif}} </h6> </li>
+                    {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4 mt-4 mt-lg-5">
+                    <h1 class="text-light fw-bold">Tracker</h1>
+                    <ul class="list-unstyled">
+                        <li class="text-light fs-6">
+                           <h6 class="text-light fs-5 fw-normal"> <i class="bi bi-caret-right-fill text-light"></i> À propos </h6>
+                        </li>
+                        <li class="text-light fs-6 ">
+                            <h6 class="text-light fs-5 fw-normal"><i class="bi bi-caret-right-fill text-light"></i> Light Innovation </h6>
+                        </li>
+                        <li class="text-light fs-6">
+                            <h6 class="text-light fs-5 fw-normal"><i class="bi bi-caret-right-fill text-light"></i> Contact</h6>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="text-light mb-4">
+            <h5 class="text-light fs-5 fw-normal py-4">
+                <i class="bi bi-c-circle"></i> 2026 - Tous droits réservés - LIGHT Innovation
+            </h5>
+        </div>
+        </div>
+    </footer>

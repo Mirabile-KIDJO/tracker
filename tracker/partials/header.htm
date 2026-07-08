@@ -1,0 +1,67 @@
+<section class="rounded-5 py-1 py-lg-5 px-xl-5">
+        <div class="header rounded-5 position-relative overflow-hidden ">
+            <img src="{{ this.theme.img_fond1|media }}" class="position-absolute w-100 h-100 object-fit-cover" alt="">
+
+            <div class="d-flex justify-content-between ">
+                <div class="bottom-0">
+                    <img src="{{ this.theme.img_fond2|media }}" alt="" class="translate-middle-x img-menphis-left img-fluid w-75 h-50 position-absolute bottom-0 start-0 mb-4 d-md-block d-none">
+                </div>
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <img src="{{ this.theme.img_fond3|media }}" class="img-fluid w-75 h-75 position-absolute bottom-0" alt="">
+                </div>
+                <div class="bottom-0">
+                    <img src="{{ this.theme.img_fond4|media }}" alt="" class="img-fluid w-75 h-50 position-absolute bottom-0 end-0 mb-4 d-none d-md-block img-menphis-right">
+                </div>
+                <div class="position-absolute h-75 w-100 d-flex align-items-end justify-content-between bottom-0">
+                    <img src="{{ this.theme.img_fond5|media }}" class="shot-left ms-4 w-25 start-0 h-50 object-fit-contain" alt="">
+                    <img src="{{ this.theme.img_fond6|media }}" class="w-25 h-50 end-0 shot-right object-fit-contain me-5" alt="">
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg px-xl-5">
+                <div class="container-fluid ">
+                    <div class="d-flex justify-content-between gap-5">
+                        <div class="navbar-brand">
+                            <img src="{{ this.theme.site_logo|media }}" class=" w-1OO" alt="Tracker Logo">
+                        </div>
+                        <button class="navbar-toggler ms-auto bg-light border-0 shadow-none rounded-pill" type="button" data-bs-target="#mobileNavbar" data-bs-toggle="offcanvas">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="offcanvas h-75 offcanvas-end justify-content-between gap-lg-4 px-lg-4" tabindex="-1" id="mobileNavbar">
+                        <div class="offcanvas-header text-light">
+                            <h5 class="offcanvas-title">Menu</h5>
+                            <button type="button" class="btn-close btn-light " data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                                <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link active  text-light" aria-current="page" href="#">Acceuil</a></li>
+                                <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link text-light" href="#fonctionnalites">Fonctionnalités</a></li>
+                                <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link text-light"  href="#solutions">Solutions</a></li>
+                                <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link text-light" href="#tarification">Tarifs</a></li>
+                                <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link text-light" href="#ressources">Ressources</a></li>
+                            </ul>
+                            <button type="button" class="btn btn-dark text-secondary" data-bs-dismiss="offcanvas">
+                                <span class="text-secondary"><i class="bi bi-shield-lock-fill me-2"></i>Connexion</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="mb-5 mx-auto d-flex flex-column align-items-center justify-content-end text-center position-relative mt-4">
+                <div class="">
+                    <h1 class="text-light fw-lighter fs-1 px-lg-4 w-50 mx-auto text-center">{{this.theme.hero_title}}</h1>
+                    <h6 class="text-light fs-5 fw-lighter opacity-75 w-50 mx-auto text-center px-lg-2">
+                        <small class="">{{this.theme.hero_description}}</small>
+                    </h6>
+                    <h6 class="text-light fw-lighter mb-3 mb-lg-5"><est class="fs-6"><span class="fw-semibold">Tracker shop</span> {{this.theme.tracker_utility}}</h6>
+                </div>
+                <a href="#" class="btn btn-secondary fs-6 mb-3 ">
+                    <span class="fw-light text-dark">
+                    <i class="bi bi-rocket-takeoff-fill me-2"></i>
+                        Commencer
+                        <span class="fw-bold">gratuitement</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>

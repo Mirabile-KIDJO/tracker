@@ -1,0 +1,487 @@
+name: tracker
+description: ''
+author: ''
+homepage: ''
+authorCode: ''
+code: ''
+parent: ''
+database: '0'
+
+form:
+    tabs:
+        fields:
+
+          site_logo:
+            label: Logo
+            type: mediafinder
+            mode: image
+            tab: header
+
+          img_fond1:
+             label: Image de fond 1
+             type: mediafinder
+             mode: image
+             tab: header
+
+          img_fond2:
+             label: Image de fond à gauche
+             type: mediafinder
+             mode: image
+             tab: header
+
+          img_fond3:
+             label: Image shot 1
+             type: mediafinder
+             mode: image
+             tab: header
+
+          img_fond4:
+             label: Image de fond à droite
+             type: mediafinder
+             mode: image
+             tab: header
+
+          img_fond5:
+             label: Image shot 2
+             type: mediafinder
+             mode: image
+             tab: header
+
+          img_fond6:
+             label: Image shot 3
+             type: mediafinder
+             mode: image
+             tab: header
+
+          hero_title:
+             label: Titre principal
+             type: textarea
+             tab: header
+
+          hero_description:
+             label: Description
+             type: textarea
+             tab: header
+
+          tracker_utility:
+             label: Utilité de tracker
+             type: text
+             tab: header
+
+          section1_title:
+             label: Titre
+             type: text
+             tab: Section 1
+             span: left
+
+          section1_principal_text:
+             label: Texte principal
+             type: textarea
+             tab: Section 1
+             span: right
+
+          section1_secondary_text:
+             label: Texte secondaire
+             type: textarea
+             tab: Section 1
+
+          section1_card1_title:
+             label: Titre de la carte 1
+             type: text
+             tab: Section 1
+             span: left
+
+          section1_card1_description:
+             label: Description de la carte 1
+             type: textarea
+             tab: Section 1
+             span: right
+
+          section1_card2_title:
+             label: Titre de la carte 2
+             type: text
+             tab: Section 1
+             span: left
+
+          section1_card2_description:
+             label: Description de la carte 2
+             type: textarea
+             tab: Section 1
+             span: right
+
+          section2_title:
+             label: Titre
+             type: text
+             tab: Section 2
+             span: left
+
+          section2_description:
+             label: Description
+             type: textarea
+             tab: Section 2
+             span: right
+
+          fonction1_title:
+             label: Titre de la fonctionnalité 1
+             type: text
+             tab: Section 2
+             span: left
+
+          fonction1_desc:
+             label: Description de la fonctionnalité 1
+             type: textarea
+             tab: Section 2
+             span: right
+
+          fonction2_title:
+             label: Titre de la fonctionnalité 2
+             type: text
+             tab: Section 2
+             span: left
+
+          fonction2_desc:
+             label: Description de la fonctionnalité 2
+             type: textarea
+             tab: Section 2
+             span: right
+
+          fonction3_title:
+             label: Titre de la fonctionnalité 3
+             type: text
+             tab: Section 2
+             span: left
+
+          fonction3_desc:
+             label: Description de la fonctionnalité 3
+             type: textarea
+             tab: Section 2
+             span: right
+
+          section3_title:
+             label: Titre
+             type: textarea
+             tab: Section 3
+             span: left
+
+          section3_desc:
+             label: Description
+             type: textarea
+             tab: Section 3
+             span: right
+
+          section3_card1_title:
+             label: Titre de la carte 1
+             type: text
+             tab: Section 3
+             span: left
+
+          section3_card1_img:
+             label: Image de la carte 1
+             type: mediafinder
+             tab: Section 3
+             span: right
+
+          section3_card1_bubble1:
+             label: Texte du premier bubble
+             type: textarea
+             tab: Section 3
+             span: left
+
+          section3_card1_bubble2:
+             label: Texte du second bubble
+             type: textarea
+             tab: Section 3
+             span: right
+
+          section3_card2_title:
+             label: Titre de la carte 2
+             type: textarea
+             tab: Section 3
+             span: left
+
+          section3_card2_img:
+             label: Image de la carte 2
+             type: mediafinder
+             tab: Section 3
+             span: right
+
+          section3_card2_text:
+             label: Texte de la carte 2
+             type: textarea
+             tab: Section 3
+             span: full
+
+          section3_card3_img:
+             label: Image de la carte 3
+             type: mediafinder
+             tab: Section 3
+
+          section3_card3_text1:
+             label: Texte 1 de la carte 3
+             type: textarea
+             tab: Section 3
+             span: left
+
+          section3_card3_text2:
+             label: Texte 2 de la carte 3
+             type: textarea
+             tab: Section 3
+             span: right
+
+          section3_img1:
+             label: Image 1
+             type: mediafinder
+             tab: Section 3
+             span: left
+
+          section3_img2:
+             label: Image 2
+             type: mediafinder
+             tab: Section 3
+             span: right
+
+          section3_img3:
+             label: Image 3
+             type: mediafinder
+             tab: Section 3
+             span: full
+
+          section4_title:
+             label: Titre
+             type: textarea
+             tab: Section 4
+             span: left
+
+          section4_description:
+             label: Description
+             type: textarea
+             tab: Section 4
+             span: right
+
+          section4_card1_title:
+             label: Titre de la carte 1
+             type: text
+             tab: Section 4
+             span: left
+
+          section4_card1_prix:
+             label: Prix de la carte 1
+             type: text
+             tab: Section 4
+             span: right
+
+          section4_card1_period:
+             label: Période de paiement de la carte 1
+             type: text
+             tab: Section 4
+             span: full
+
+          section4_card1_price_rest:
+             label: Reste du prix de la carte 1
+             type: text
+             tab: Section 4
+             span: full
+
+          section4_card1_desc1:
+             label: Description de la carte 1(phrase 1)
+             type: textarea
+             tab: Section 4
+             span: left
+
+          section4_card1_desc2:
+             label: Description de la carte 1(phrase 2)
+             type: textarea
+             tab: Section 4
+             span: right
+
+          fonctions_card1:
+            label: Fonctionnalités de la carte 1
+            type: repeater
+            tab: Section 4
+
+            form:
+                fields:
+
+                  fonctionnalite:
+                      label: Fonctionnalité
+                      type: text
+
+          section4_card2_title:
+             label: Titre de la carte 2
+             type: text
+             tab: Section 4
+             span: left
+
+          section4_card2_prix:
+             label: Prix de la carte 2
+             type: text
+             tab: Section 4
+             span: right
+
+          section4_card2_period:
+             label: Période du prix de la carte 2
+             type: textarea
+             tab: Section 4
+             span: left
+
+          section4_card2_desc1:
+             label: Description de la carte 2(phrase 1)
+             type: textarea
+             tab: Section 4
+             span: right
+
+          section4_card2_desc2:
+             label: Description de la carte 2(phrase 2)
+             type: textarea
+             tab: Section 4
+             span: left
+
+          fonctions_card2:
+            label: Fonctionnalités de la carte 2
+            type: repeater
+            tab: Section 4
+
+            form:
+                fields:
+
+                  fonctionnalite:
+                      label: Fonctionnalité
+                      type: text
+
+          section4_card3_title:
+             label: Titre de la carte 3
+             type: text
+             tab: Section 4
+             span: left
+
+          section4_card3_prix:
+             label: Prix de la carte 3
+             type: text
+             tab: Section 4
+             span: right
+
+          section4_card3_period:
+             label: Période du prix de la carte 3
+             type: textarea
+             tab: Section 4
+             span: left
+
+          section4_card3_desc1:
+             label: Description de la carte 3(phrase 1)
+             type: textarea
+             tab: Section 4
+             span: right
+
+          section4_card3_desc2:
+             label: Description de la carte 3(phrase 2)
+             type: textarea
+             tab: Section 4
+             span: left
+
+          fonctions_card3:
+            label: Fonctionnalités de la carte 3
+            type: repeater
+            tab: Section 4
+
+            form:
+                fields:
+
+                  fonctionnalite:
+                      label: Fonctionnalité
+                      type: text
+
+          section5_text1:
+             label: Texte principal
+             type: textarea
+             tab: Section 5
+             span: left
+
+          section5_text2:
+             label: Texte secondaire
+             type: textarea
+             tab: Section 5
+             span: right
+
+          section5_img:
+             label: Image principale
+             type: mediafinder
+             tab: Section 5
+             span: full
+
+          section6_title:
+             label: Titre
+             type: text
+             tab: Section 6
+             span: left
+
+          section6_description:
+             label: Description
+             type: textarea
+             tab: Section 6
+             span: right
+
+          faqs:
+            label: Faqs
+            type: repeater
+            tab: Section 6
+
+            form:
+                fields:
+
+                  question:
+                      label: Question
+                      type: text
+
+                  reponse:
+                      label: Réponse
+                      type: textarea
+
+          footer_img:
+             label: logo
+             type: mediafinder
+             tab: Footer
+             span: left
+
+          footer_text:
+             label: Texte
+             type: textarea
+             tab: Footer
+             span: right
+
+          footer_fonctionnalites:
+            label: Fonctionnalités
+            type: repeater
+            tab: Footer
+
+            form:
+                fields:
+
+                  fonctionnalite:
+                      label: Fonctionnalité
+                      type: text
+
+          footer_ressources:
+            label: Ressources
+            type: repeater
+            tab: Footer
+
+            form:
+                fields:
+
+                  ressource:
+                      label: Fonctionnalité
+                      type: text
+
+          footer_tarif:
+            label: Tarifs
+            type: repeater
+            tab: Footer
+
+            form:
+                fields:
+
+                  tarif:
+                      label: Fonctionnalité
+                      type: text
+
+
